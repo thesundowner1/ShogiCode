@@ -1,4 +1,4 @@
-function shogi(str) {
+ function shogi(str) {
             let strArr = [];
             let encStrArr = [];
             let encStr, char;
@@ -91,6 +91,42 @@ function shogi(str) {
                         char = "0062";
                         break;
 
+                    case " ":
+                        char = "9000";
+                        break;
+
+                    case "0":
+                        char = "0100";
+                        break;
+                    case "1":
+                        char = "0101";
+                        break;
+                    case "2":
+                        char = "0102";
+                        break;
+                    case "3":
+                        char = "0103";
+                        break;
+                    case "4":
+                        char = "0120";
+                        break;
+                    case "5":
+                        char = "0121";
+                        break;
+                    case "6":
+                        char = "0122";
+                        break;
+                    case "7":
+                        char = "0123";
+                        break;
+                    case "8":
+                        char = "0130";
+                        break;
+                    case "9":
+                        char = "0131";
+                        break;
+
+
                     default:
                         char = "9999";
                         break;
@@ -99,7 +135,7 @@ function shogi(str) {
 
             }
             encStr = "";
-            for(i = 0; i <encStrArr.length ; i ++) {
+            for (i = 0; i < encStrArr.length; i++) {
                 encStr += String(encStrArr[i]);
 
             }
